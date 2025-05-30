@@ -18,8 +18,26 @@ return {
       window = {
         mappings = {
           ['\\'] = 'close_window',
+          ['l'] = 'open',
+          ['h'] = 'close_node',
+        },
+      },
+      follow_current_file = {
+        enabled = true,
+      },
+      filtered_items = {
+        visible = true,
+        hide_by_name = {},
+        never_show = {
+          '.git',
+          'DS_Store',
+          'thumbs.db',
+          '.vscode',
+          '.pytest_cache',
+          '.venv',
         },
       },
     },
+    close_if_last_window = true,
   },
 }

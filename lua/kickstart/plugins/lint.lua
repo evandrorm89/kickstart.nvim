@@ -6,7 +6,11 @@ return {
     config = function()
       local lint = require 'lint'
       lint.linters_by_ft = {
-        markdown = { 'markdownlint' },
+        -- markdown = { 'markdownlint' },
+        python = { 'flake8' },
+        javascript = { 'eslint' },
+        typescript = { 'eslint' },
+        -- sh = { 'shellcheck' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
